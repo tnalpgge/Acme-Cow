@@ -125,7 +125,7 @@ sub variant_cow
     my $f = shift;
     my $full;
     my $fn;
-    if (($f !~ m,/,) && ($f !~ /.*\.cow/)) {
+    if ($f =~ /^\w[\d\w]+$/) {
 	my $package = "Acme::Cow::$f";
 	eval "require $package;";
 	if (not $@) {
