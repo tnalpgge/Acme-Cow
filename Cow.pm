@@ -404,10 +404,11 @@ for speech, while {$tr} is a slash ("/"); both are a lowercase
 letter O ("o") for thought.  {$el} is a left eye, and {$er} is a
 right eye; both are "o" by default.  Finally {$U} is a tongue,
 because a capital U looks like a tongue.  (Its default value is "U
-".)
+".)  Escape all other curly-braces within the ASCII art with
+backslashes.
 
-There are two methods to go about this: the standalone file and
-the Perl module.
+There are two methods to make your own cow file: the standalone
+file and the Perl module.
 
 For the standalone file, take your piece of ASCII art and modify
 it according to the C<Text::Template> rules above.  Note that the
@@ -438,6 +439,6 @@ Tony Monroe E<lt>tmonroe+perl@nog.netE<gt>
 
 =head1 SEE ALSO
 
-L<perl>, L<cowsay>, L<figlet>, L<fortune>
+L<perl>, L<cowsay>, L<figlet>, L<fortune>, L<cowpm>
 
 =cut
