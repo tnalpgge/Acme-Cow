@@ -397,22 +397,23 @@ __END__
 
 First, get comfortable with C<Text::Template> and its capabilities.
 
-{$balloon} is the text balloon; it should be on a line by itself.
-{$tl} and {$tr} are what goes to the text balloon from the
-thinking/speaking part of the picture; {$tl} is a backslash ("\")
-for speech, while {$tr} is a slash ("/"); both are a lowercase
+{$balloon} is the text balloon; it should be on a line by itself,
+flush-left.  {$tl} and {$tr} are what goes to the text balloon from
+the thinking/speaking part of the picture; {$tl} is a backslash
+("\") for speech, while {$tr} is a slash ("/"); both are a lowercase
 letter O ("o") for thought.  {$el} is a left eye, and {$er} is a
 right eye; both are "o" by default.  Finally {$U} is a tongue,
-because a capital U looks like a tongue.  (Its default value is "U
-".)  Escape all other curly-braces within the ASCII art with
-backslashes.
+because a capital U looks like a tongue.  (Its default value is "U ".) 
+Escape all other curly-braces within the ASCII art with backslashes.
 
 There are two methods to make your own cow file: the standalone
 file and the Perl module.
 
 For the standalone file, take your piece of ASCII art and modify
 it according to the C<Text::Template> rules above.  Note that the
-balloon must be flush-left if you choose this method.
+balloon must be flush-left in the template if you choose this method.
+If the balloon isn't meant to be flush-left in the final output,
+use its C<over()> method.
 
 For a Perl module, you should C<use Text::Template;> and declare
 that your module C<ISA> subclass of C<Acme::Cow>.  You may do other
@@ -435,7 +436,7 @@ has stolen some) but they're still all cows.
 
 =head1 AUTHOR
 
-Tony Monroe E<lt>tmonroe+perl@nog.netE<gt>
+Tony Monroe E<lt>tmonroe plus perl at nog dot netE<gt>
 
 =head1 SEE ALSO
 

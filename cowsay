@@ -2,7 +2,7 @@
 ##
 ## cow{say,think}
 ##
-## This file is part of cowsay.  (c) 1999-2001 Tony Monroe.
+## This file is part of cowsay.  (c) 1999-2002 Tony Monroe.
 ##
 
 use strict;
@@ -154,7 +154,7 @@ sub variant_cow
 
 sub display_usage {
 	die <<EOF;
-cow{say,think} version $VERSION, (c) 1999-2001 Tony Monroe
+cow{say,think} version $VERSION, (c) 1999-2002 Tony Monroe
 
 Usage: $progname [-bdgpstwy] [-hv?] [-e eyes] [-f cowfile] [-l] [-n] 
 	[-T tongue] [-W wrapcolumn] [message]
@@ -235,7 +235,9 @@ the C<cows> subdirectory).
 Cow files for cowsay 4 are not compatible with earlier versions;
 they must be converted.
 
-The author is not responsible 
+The author is not responsible if people are offended or institutionalized
+because of the use of this software.  (The author is also not
+responsible in general, but that's a separate matter.)
 
 =head1 SEE ALSO
 
@@ -243,7 +245,7 @@ perl(1), figlet(6), L<Acme::Cow>
 
 =head1 AUTHOR
 
-Tony Monroe <tmonroe plus perl at nog dot net>.  Has been called
+Tony Monroe E<lt>tmonroe plus perl at nog dot netE<gt>.  Has been called
 a freak many times for even thinking of such a piece of software,
 let alone writing it.
 
@@ -251,7 +253,8 @@ The following have contributed cow files, directly or indirectly:
 
 Shannon Appel, Jordan K Hubbard, Donald Kubasak, Marshall Kirk
 McKusick, Lincoln Myers, David Petrou, Anthony S Polito, Geordan
-Rosario, Eric Rowe, Lars Smith, pborys@p-soft.silesia.linux.org.pl.
+Rosario, Eric Rowe, Lars Smith, E<lt>pborys at p-soft dot silesia
+dot linux dot org dot plE<gt>.
 
 If your name is not on this list, and it should be, then feel free
 to mail the author and remind him gently.
@@ -271,5 +274,5 @@ Cowsay 1 (1996?) was a very limited cow, which only said things in
 a particular format: I<subject> is I<verb>ing I<object>.  Cowsay
 2 (1997?) overcame that limitation, and added alternate cow files,
 and thought capabilities.  Cowsay 3 (1999) was a rewrite in Perl
-5.  Cowsay 4 (2001) leverages Perl's object facilities to make the
+5.  Cowsay 4 (2002) leverages Perl's object facilities to make the
 author's life easier.

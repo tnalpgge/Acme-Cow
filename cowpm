@@ -1,4 +1,5 @@
 #!/usr/local/bin/perl
+# This file is part of cowsay.  (c) 2001-2002 Tony Monroe
 
 use strict;
 use Text::Template;

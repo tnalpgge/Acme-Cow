@@ -33,11 +33,11 @@ This module requires these other modules and libraries:
 
     Text::Template
 
-COPYRIGHT AND LICENCE
+COPYRIGHT AND LICENSE
 
 Acme::Cow and cowsay are distributed under the same license terms
 as Perl itself.
 
-Copyright (c) 2001 Tony Monroe <tmonroe plus perl at nog dot net>
+Copyright (c) 2002 Tony Monroe <tmonroe plus perl at nog dot net>
 
 $Id$
