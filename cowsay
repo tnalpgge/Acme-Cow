@@ -156,8 +156,8 @@ sub display_usage {
 	die <<EOF;
 cow{say,think} version $VERSION, (c) 1999-2001 Tony Monroe
 
-Usage: $progname [B<-bdgpstwy>] [B<-hv?>] [B<-e> eyes] [B<-f> I<cowfile>] 
-          [B<-l>] [B<-n>] [B<-T> I<tongue>] [B<-W> I<wrapcolumn>] [I<message>]
+Usage: $progname [-bdgpstwy] [-hv?] [-e eyes] [-f cowfile] [-l] [-n] 
+	[-T tongue] [-W wrapcolumn] [message]
 
 $rcs_id
 EOF
@@ -171,7 +171,8 @@ cow{say,think} - A configurable talking (or thinking) cow
 
 =head1 SYNOPSIS
 
-cowsay [-bdgpstwy] [-hv?] [-e eyes] [-f cowfile] [-l] [-n] [-T tongue] [-W wrapcolumn] [message]
+Usage: $progname [B<-bdgpstwy>] [B<-hv?>] [B<-e> eyes] [B<-f> I<cowfile>] 
+          [B<-l>] [B<-n>] [B<-T> I<tongue>] [B<-W> I<wrapcolumn>] [I<message>]
 
 =head1 DESCRIPTION
 
